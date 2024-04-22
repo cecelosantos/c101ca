@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Vamos Conversar</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+     <link rel="stylesheet" type="text/css" href="style.css">
+	 <script src="chat.js"></script>
+
+    Adicione links para os arquivos style.css e chat.js em seu arquivo index.html
+
+</head>
+
+<body>
+	<div style="text-align: center;">
+		<h1 class="header">
+			Vamos Conversar<sup>
+				<img src="m2.png">
+			</sup>
+		</h1>
+		<div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
+			<img src="logo.png" class="logo">
+			<h3>Descubra o que está acontecendo no mundo.</h3>
+			<h4>Junte-se a nós hoje!</h4>
+			<div class="form-group">
+				<label>Nome_de_Usuário:</label>
+            		
+				
+			    <input type="text" id="Nome_de_Usuário" class="form-control"  placeholder="Nome_de_Usuário">
+			</div>
+
+			<input type="text" id="chat_room." class="form-control"  placeholder="chat_room.">
+			
+				Adicione uma função onClick no botão de entrada. 
+			<button id="login_button" class="btn btn-primary" onclick="addUser();">Entrar</button>
+			
+			<button id="exit_button" class="btn btn-primary" onclick="addUser();">Sair</button>
+
+			<button id="addroom" class="btn btn-primary" onclick="addUser();">adicionar sala</button>
+			
+			<span id="Nome_de_Usuário"></span>
+
+            <button onclick="updateUserName()">Atualizar Nome do Usuário</button>
+  
+			<ul id="lista-de-salas"></ul>
+			<li>addroom</li>
+			<br><br>
+		</div>
+	</div>
+	</body>
+
+</html>
